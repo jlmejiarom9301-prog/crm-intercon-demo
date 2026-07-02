@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRM Comercial Inter-Con | Demo Ejecutiva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">IC</div>
+      <div>
+        <h1>CRM Comercial</h1>
+        <p>Modelo operativo ejecutivo</p>
+      </div>
+    </div>
+
+    <button class="nav active" data-screen="executive">Resumen ejecutivo</button>
+    <button class="nav" data-screen="beforeafter">Actual vs objetivo</button>
+    <button class="nav" data-screen="leadjourney">Flujo del lead</button>
+    <button class="nav" data-screen="ecosystem">Ecosistema</button>
+    <button class="nav" data-screen="markets">Módulos comerciales</button>
+    <button class="nav" data-screen="hubspot">Vs HubSpot</button>
+  </aside>
+
+  <main class="content">
+    <section id="executive" class="screen active">
+      <div class="hero">
+        <span class="eyebrow">Propuesta de valor</span>
+        <h2>De captador de leads a sistema operativo comercial.</h2>
+        <p class="lead">
+          El CRM centraliza prospectos, controla seguimiento, conecta campañas digitales y permite medir la conversión comercial por fuente, vendedor, sector y tipo de mercado.
+        </p>
+      </div>
+
+      <div class="executive-grid">
+        <div class="metric-card">
+          <small>01</small>
+          <strong>Captura</strong>
+          <span>Apollo, Tapni, chatbot, campañas, eventos y carga manual.</span>
+        </div>
+        <div class="metric-card">
+          <small>02</small>
+          <strong>Control</strong>
+          <span>Un solo registro por empresa/contacto, evitando duplicados y pérdida de seguimiento.</span>
+        </div>
+        <div class="metric-card">
+          <small>03</small>
+          <strong>Automatización</strong>
+          <span>Asignación, correos, recordatorios, escalamiento y trazabilidad.</span>
+        </div>
+        <div class="metric-card">
+          <small>04</small>
+          <strong>Medición</strong>
+          <span>Conversión, actividad comercial, campañas y costo por lead.</span>
+        </div>
+      </div>
+
+      <div class="director-message">
+        <strong>Mensaje para dirección:</strong>
+        <p>No se está construyendo una herramienta aislada. Se está construyendo una capa comercial conectada, medible y escalable para ventas, marketing y nuevos modelos de negocio.</p>
+      </div>
+    </section>
+
+    <section id="beforeafter" class="screen">
+      <span class="eyebrow">Transformación operativa</span>
+      <h2>Cómo se trabaja hoy vs cómo debe operar el CRM.</h2>
+      <p class="lead">Presiona el botón para animar el cambio del flujo actual al flujo objetivo.</p>
+
+      <div class="compare-actions">
+        <button id="animateCompare" class="primary-btn">Animar comparación</button>
+        <button id="resetCompare" class="ghost-btn">Reiniciar</button>
+      </div>
+
+      <div class="comparison-lanes">
+        <div class="lane current">
+          <h3>Flujo actual</h3>
+          <div class="node n1">Lead llega</div>
+          <div class="arrow">↓</div>
+          <div class="node n2">Se comparte manualmente</div>
+          <div class="arrow">↓</div>
+          <div class="node n3">Seguimiento disperso</div>
+          <div class="arrow">↓</div>
+          <div class="node n4 risk">Riesgo de pérdida / duplicidad</div>
+        </div>
+
+        <div class="lane future">
+          <h3>Flujo objetivo</h3>
+          <div class="node f1">Lead entra al CRM</div>
+          <div class="arrow">↓</div>
+          <div class="node f2">Validación + deduplicación</div>
+          <div class="arrow">↓</div>
+          <div class="node f3">Asignación automática</div>
+          <div class="arrow">↓</div>
+          <div class="node f4">Seguimiento + alertas</div>
+          <div class="arrow">↓</div>
+          <div class="node f5 success">Pipeline + dashboard ejecutivo</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadjourney" class="screen">
+      <span class="eyebrow">Simulación ejecutiva</span>
+      <h2>Recorrido inteligente de un lead.</h2>
+
+      <div class="journey-wrap">
+        <div class="timeline">
+          <button class="step active" data-title="Captura multifuente" data-copy="El lead puede venir de Apollo, Tapni, chatbot, formulario web, campaña, evento o carga manual. Todo entra a un mismo modelo comercial.">Captura</button>
+          <button class="step" data-title="Validación operativa" data-copy="Se revisa correo, empresa, contacto, duplicados, origen, sector, ciudad, tipo de mercado y prioridad comercial.">Validación</button>
+          <button class="step" data-title="Asignación controlada" data-copy="El lead se distribuye según reglas: vendedor, sector, campaña, zona, protección física, seguridad electrónica o cuenta estratégica.">Asignación</button>
+          <button class="step" data-title="Seguimiento comercial" data-copy="El vendedor registra llamada, correo, reunión, estatus, siguiente acción y probabilidad de avance.">Seguimiento</button>
+          <button class="step" data-title="Automatización" data-copy="Si no hay movimiento, el sistema puede disparar recordatorios, secuencias de correo, alertas o escalamiento comercial.">Automatización</button>
+          <button class="step" data-title="Conversión y medición" data-copy="El lead avanza a oportunidad, cotización, negociación, contrato y cliente; el resultado se mide por fuente, vendedor y campaña.">Conversión</button>
+        </div>
+
+        <div class="journey-detail">
+          <small id="journeyStage">Etapa seleccionada</small>
+          <h3 id="journeyTitle">Captura multifuente</h3>
+          <p id="journeyCopy">El lead puede venir de Apollo, Tapni, chatbot, formulario web, campaña, evento o carga manual. Todo entra a un mismo modelo comercial.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosystem" class="screen">
+      <span class="eyebrow">Arquitectura modular</span>
+      <h2>Integraciones actuales y futuras dentro del mismo entorno.</h2>
+
+      <div class="ecosystem-map">
+        <div class="source">Apollo</div>
+        <div class="source">Tapni</div>
+        <div class="source">Chatbot</div>
+        <div class="source">Google Ads</div>
+        <div class="source">Metricool</div>
+
+        <div class="connector-line"></div>
+        <div class="core">Airtable CRM<br><span>Base comercial única</span></div>
+        <div class="connector-line"></div>
+
+        <div class="target">n8n / Power Automate</div>
+        <div class="target">Outlook</div>
+        <div class="target">Power BI</div>
+        <div class="target">IA comercial</div>
+      </div>
+
+      <div class="detail-grid">
+        <div><strong>Entrada</strong><span>Leads, contactos, campañas, eventos, formularios y anuncios.</span></div>
+        <div><strong>Proceso</strong><span>Limpieza, asignación, priorización, seguimiento y automatización.</span></div>
+        <div><strong>Salida</strong><span>Pipeline, alertas, métricas, reportes y decisiones comerciales.</span></div>
+      </div>
+    </section>
+
+    <section id="markets" class="screen">
+      <span class="eyebrow">Modelo comercial segmentado</span>
+      <h2>El CRM permite operar estrategias distintas por mercado.</h2>
+
+      <div class="market-grid">
+        <div class="market-card">
+          <h3>Protección física</h3>
+          <p>Prospectos de guardias, cobertura nacional, instalaciones, operación y cuentas corporativas.</p>
+          <span>Indicadores: leads, visitas, cotizaciones, cierre.</span>
+        </div>
+        <div class="market-card">
+          <h3>Seguridad electrónica</h3>
+          <p>CCTV, control de acceso, alarmas, monitoreo, mantenimiento y proyectos híbridos.</p>
+          <span>Indicadores: oportunidad técnica, ticket estimado, etapa técnica.</span>
+        </div>
+        <div class="market-card">
+          <h3>Sectores estratégicos</h3>
+          <p>Bancario, automotriz, farmacéutico, industrial, retail y corporativo.</p>
+          <span>Indicadores: conversión por sector, campañas y vendedor.</span>
+        </div>
+      </div>
+
+      <div class="note">
+        La ventaja no es solo capturar leads; es diseñar rutas comerciales diferentes según el tipo de cliente y la oferta.
+      </div>
+    </section>
+
+    <section id="hubspot" class="screen">
+      <span class="eyebrow">Comparativo ejecutivo</span>
+      <h2>Modelo propio vs plataforma tipo HubSpot.</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Criterio</th>
+            <th>Modelo Inter-Con</th>
+            <th>HubSpot / CRM comercial estándar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Costo</td>
+            <td>Menor costo incremental; aprovecha herramientas ya disponibles.</td>
+            <td>Licenciamiento recurrente que escala por usuarios, contactos y módulos.</td>
+          </tr>
+          <tr>
+            <td>Implementación</td>
+            <td>Modular: se construye por prioridad de negocio.</td>
+            <td>Más rápido para procesos estándar, pero puede requerir consultoría.</td>
+          </tr>
+          <tr>
+            <td>Personalización</td>
+            <td>Alta: reglas por vendedor, sector, campaña y tipo de mercado.</td>
+            <td>Alta, pero limitada por plan, configuración y dependencia de plataforma.</td>
+          </tr>
+          <tr>
+            <td>Datos</td>
+            <td>Conexión directa con Power BI y reporting interno.</td>
+            <td>Reporting nativo, pero con datos dentro del ecosistema HubSpot.</td>
+          </tr>
+          <tr>
+            <td>Escalabilidad</td>
+            <td>Tapni, chatbot, Google Ads, Metricool, IA, Outlook y nuevos módulos.</td>
+            <td>Escalable, pero con mayor costo de suite.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="director-message compact">
+        <strong>Conclusión:</strong>
+        <p>HubSpot es una plataforma robusta. El modelo propio permite iniciar con menor costo, mayor ajuste operativo y crecimiento por módulos según las prioridades reales de Inter-Con.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
