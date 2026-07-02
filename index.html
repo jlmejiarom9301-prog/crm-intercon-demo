@@ -3,228 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CRM Comercial Inter-Con | Demo Ejecutiva</title>
+  <title>Inter-Con Commercial Intelligence Map</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="brand">
-      <div class="logo">IC</div>
-      <div>
-        <h1>CRM Comercial</h1>
-        <p>Modelo operativo ejecutivo</p>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><div class="logo">IC</div><div><h1>Commercial Intelligence Map</h1><p>CRM + Automatización + Chatbot + IA Comercial</p></div></div>
+      <div class="top-actions">
+        <button class="pill active" data-view="map">🧠 Mapa mental</button>
+        <button class="pill" data-view="ai">🤖 Ruta IA + Chatbot</button>
+        <button class="pill" data-view="story">🎯 Historia ejecutiva</button>
       </div>
-    </div>
-
-    <button class="nav active" data-screen="executive">Resumen ejecutivo</button>
-    <button class="nav" data-screen="beforeafter">Actual vs objetivo</button>
-    <button class="nav" data-screen="leadjourney">Flujo del lead</button>
-    <button class="nav" data-screen="ecosystem">Ecosistema</button>
-    <button class="nav" data-screen="markets">Módulos comerciales</button>
-    <button class="nav" data-screen="hubspot">Vs HubSpot</button>
-  </aside>
-
-  <main class="content">
-    <section id="executive" class="screen active">
-      <div class="hero">
-        <span class="eyebrow">Propuesta de valor</span>
-        <h2>De captador de leads a sistema operativo comercial.</h2>
-        <p class="lead">
-          El CRM centraliza prospectos, controla seguimiento, conecta campañas digitales y permite medir la conversión comercial por fuente, vendedor, sector y tipo de mercado.
-        </p>
-      </div>
-
-      <div class="executive-grid">
-        <div class="metric-card">
-          <small>01</small>
-          <strong>Captura</strong>
-          <span>Apollo, Tapni, chatbot, campañas, eventos y carga manual.</span>
+    </header>
+    <main>
+      <section id="map" class="view active">
+        <div class="intro"><span class="eyebrow">Visión ejecutiva</span><h2>El CRM es el cerebro comercial: conecta datos, personas, campañas, automatización e inteligencia artificial.</h2><p>Da clic en cualquier nodo para ver qué aporta, qué dato genera y por qué fortalece el proyecto.</p></div>
+        <div class="mindmap">
+          <div class="center-node" data-title="CRM Comercial Inter-Con" data-icon="🧠" data-copy="Es el núcleo operativo. Centraliza leads, empresas, contactos, interacciones, campañas, vendedores, sectores y estatus comerciales. Sin esta base, el chatbot y la IA no tendrían memoria, contexto ni trazabilidad."><span>🧠</span><strong>CRM Comercial</strong><small>Cerebro del ecosistema</small></div>
+          <button class="mind-node node-a" data-title="Captación multifuente" data-icon="📥" data-copy="Integra leads desde Apollo, Tapni, chatbot, formularios, eventos, Google Ads y carga manual. Esto evita que cada fuente opere como isla.">📥<strong>Captación</strong></button>
+          <button class="mind-node node-b" data-title="Automatización comercial" data-icon="⚙️" data-copy="n8n / Power Automate pueden validar datos, quitar duplicados, asignar vendedores, enviar correos, crear tareas y escalar leads sin seguimiento.">⚙️<strong>Automatización</strong></button>
+          <button class="mind-node node-c" data-title="Marketing medible" data-icon="📣" data-copy="Metricool y Google Ads permiten medir campañas, clics, conversiones, costo por lead, fuente y retorno comercial.">📣<strong>Marketing</strong></button>
+          <button class="mind-node node-d" data-title="Pipeline comercial" data-icon="📊" data-copy="Permite ver Nuevo, En prospección, En negociación, Oportunidad, Cotización, Contrato y Cliente, con responsables y fechas.">📊<strong>Pipeline</strong></button>
+          <button class="mind-node node-e" data-title="Módulos por mercado" data-icon="🛡️" data-copy="Se pueden crear rutas distintas para Protección Física, Seguridad Electrónica, Bancario, Automotriz, Farmacéutico, Industrial y Retail.">🛡️<strong>Mercados</strong></button>
+          <button class="mind-node node-f" data-title="Chatbot conectado al CRM" data-icon="💬" data-copy="El chatbot no debe ser solo un chat de página web. Debe consultar el CRM, registrar prospectos, clasificar intención y activar seguimiento comercial.">💬<strong>Chatbot</strong></button>
+          <button class="mind-node node-g" data-title="IA comercial entrenable" data-icon="🤖" data-copy="La IA aprende de leads, interacciones, respuestas, sectores, objeciones, motivos de avance y cierre. Con eso puede sugerir mensajes, priorizar prospectos y prospectar desde un chat.">🤖<strong>IA Comercial</strong></button>
+          <button class="mind-node node-h" data-title="Dirección y control" data-icon="📈" data-copy="Power BI convierte la operación comercial en indicadores: leads por fuente, conversión, actividad por vendedor, costo por lead, avance por sector y forecast.">📈<strong>Dirección</strong></button>
+          <svg class="lines" viewBox="0 0 1000 620" preserveAspectRatio="none"><path d="M500 310 C310 180, 240 130, 150 120"/><path d="M500 310 C690 180, 760 130, 850 120"/><path d="M500 310 C275 300, 230 280, 120 310"/><path d="M500 310 C725 300, 770 280, 880 310"/><path d="M500 310 C310 450, 240 500, 150 500"/><path d="M500 310 C690 450, 760 500, 850 500"/><path d="M500 310 C500 120, 500 110, 500 70"/><path d="M500 310 C500 500, 500 520, 500 570"/></svg>
         </div>
-        <div class="metric-card">
-          <small>02</small>
-          <strong>Control</strong>
-          <span>Un solo registro por empresa/contacto, evitando duplicados y pérdida de seguimiento.</span>
-        </div>
-        <div class="metric-card">
-          <small>03</small>
-          <strong>Automatización</strong>
-          <span>Asignación, correos, recordatorios, escalamiento y trazabilidad.</span>
-        </div>
-        <div class="metric-card">
-          <small>04</small>
-          <strong>Medición</strong>
-          <span>Conversión, actividad comercial, campañas y costo por lead.</span>
-        </div>
-      </div>
-
-      <div class="director-message">
-        <strong>Mensaje para dirección:</strong>
-        <p>No se está construyendo una herramienta aislada. Se está construyendo una capa comercial conectada, medible y escalable para ventas, marketing y nuevos modelos de negocio.</p>
-      </div>
-    </section>
-
-    <section id="beforeafter" class="screen">
-      <span class="eyebrow">Transformación operativa</span>
-      <h2>Cómo se trabaja hoy vs cómo debe operar el CRM.</h2>
-      <p class="lead">Presiona el botón para animar el cambio del flujo actual al flujo objetivo.</p>
-
-      <div class="compare-actions">
-        <button id="animateCompare" class="primary-btn">Animar comparación</button>
-        <button id="resetCompare" class="ghost-btn">Reiniciar</button>
-      </div>
-
-      <div class="comparison-lanes">
-        <div class="lane current">
-          <h3>Flujo actual</h3>
-          <div class="node n1">Lead llega</div>
-          <div class="arrow">↓</div>
-          <div class="node n2">Se comparte manualmente</div>
-          <div class="arrow">↓</div>
-          <div class="node n3">Seguimiento disperso</div>
-          <div class="arrow">↓</div>
-          <div class="node n4 risk">Riesgo de pérdida / duplicidad</div>
-        </div>
-
-        <div class="lane future">
-          <h3>Flujo objetivo</h3>
-          <div class="node f1">Lead entra al CRM</div>
-          <div class="arrow">↓</div>
-          <div class="node f2">Validación + deduplicación</div>
-          <div class="arrow">↓</div>
-          <div class="node f3">Asignación automática</div>
-          <div class="arrow">↓</div>
-          <div class="node f4">Seguimiento + alertas</div>
-          <div class="arrow">↓</div>
-          <div class="node f5 success">Pipeline + dashboard ejecutivo</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadjourney" class="screen">
-      <span class="eyebrow">Simulación ejecutiva</span>
-      <h2>Recorrido inteligente de un lead.</h2>
-
-      <div class="journey-wrap">
-        <div class="timeline">
-          <button class="step active" data-title="Captura multifuente" data-copy="El lead puede venir de Apollo, Tapni, chatbot, formulario web, campaña, evento o carga manual. Todo entra a un mismo modelo comercial.">Captura</button>
-          <button class="step" data-title="Validación operativa" data-copy="Se revisa correo, empresa, contacto, duplicados, origen, sector, ciudad, tipo de mercado y prioridad comercial.">Validación</button>
-          <button class="step" data-title="Asignación controlada" data-copy="El lead se distribuye según reglas: vendedor, sector, campaña, zona, protección física, seguridad electrónica o cuenta estratégica.">Asignación</button>
-          <button class="step" data-title="Seguimiento comercial" data-copy="El vendedor registra llamada, correo, reunión, estatus, siguiente acción y probabilidad de avance.">Seguimiento</button>
-          <button class="step" data-title="Automatización" data-copy="Si no hay movimiento, el sistema puede disparar recordatorios, secuencias de correo, alertas o escalamiento comercial.">Automatización</button>
-          <button class="step" data-title="Conversión y medición" data-copy="El lead avanza a oportunidad, cotización, negociación, contrato y cliente; el resultado se mide por fuente, vendedor y campaña.">Conversión</button>
-        </div>
-
-        <div class="journey-detail">
-          <small id="journeyStage">Etapa seleccionada</small>
-          <h3 id="journeyTitle">Captura multifuente</h3>
-          <p id="journeyCopy">El lead puede venir de Apollo, Tapni, chatbot, formulario web, campaña, evento o carga manual. Todo entra a un mismo modelo comercial.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="ecosystem" class="screen">
-      <span class="eyebrow">Arquitectura modular</span>
-      <h2>Integraciones actuales y futuras dentro del mismo entorno.</h2>
-
-      <div class="ecosystem-map">
-        <div class="source">Apollo</div>
-        <div class="source">Tapni</div>
-        <div class="source">Chatbot</div>
-        <div class="source">Google Ads</div>
-        <div class="source">Metricool</div>
-
-        <div class="connector-line"></div>
-        <div class="core">Airtable CRM<br><span>Base comercial única</span></div>
-        <div class="connector-line"></div>
-
-        <div class="target">n8n / Power Automate</div>
-        <div class="target">Outlook</div>
-        <div class="target">Power BI</div>
-        <div class="target">IA comercial</div>
-      </div>
-
-      <div class="detail-grid">
-        <div><strong>Entrada</strong><span>Leads, contactos, campañas, eventos, formularios y anuncios.</span></div>
-        <div><strong>Proceso</strong><span>Limpieza, asignación, priorización, seguimiento y automatización.</span></div>
-        <div><strong>Salida</strong><span>Pipeline, alertas, métricas, reportes y decisiones comerciales.</span></div>
-      </div>
-    </section>
-
-    <section id="markets" class="screen">
-      <span class="eyebrow">Modelo comercial segmentado</span>
-      <h2>El CRM permite operar estrategias distintas por mercado.</h2>
-
-      <div class="market-grid">
-        <div class="market-card">
-          <h3>Protección física</h3>
-          <p>Prospectos de guardias, cobertura nacional, instalaciones, operación y cuentas corporativas.</p>
-          <span>Indicadores: leads, visitas, cotizaciones, cierre.</span>
-        </div>
-        <div class="market-card">
-          <h3>Seguridad electrónica</h3>
-          <p>CCTV, control de acceso, alarmas, monitoreo, mantenimiento y proyectos híbridos.</p>
-          <span>Indicadores: oportunidad técnica, ticket estimado, etapa técnica.</span>
-        </div>
-        <div class="market-card">
-          <h3>Sectores estratégicos</h3>
-          <p>Bancario, automotriz, farmacéutico, industrial, retail y corporativo.</p>
-          <span>Indicadores: conversión por sector, campañas y vendedor.</span>
-        </div>
-      </div>
-
-      <div class="note">
-        La ventaja no es solo capturar leads; es diseñar rutas comerciales diferentes según el tipo de cliente y la oferta.
-      </div>
-    </section>
-
-    <section id="hubspot" class="screen">
-      <span class="eyebrow">Comparativo ejecutivo</span>
-      <h2>Modelo propio vs plataforma tipo HubSpot.</h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Criterio</th>
-            <th>Modelo Inter-Con</th>
-            <th>HubSpot / CRM comercial estándar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Costo</td>
-            <td>Menor costo incremental; aprovecha herramientas ya disponibles.</td>
-            <td>Licenciamiento recurrente que escala por usuarios, contactos y módulos.</td>
-          </tr>
-          <tr>
-            <td>Implementación</td>
-            <td>Modular: se construye por prioridad de negocio.</td>
-            <td>Más rápido para procesos estándar, pero puede requerir consultoría.</td>
-          </tr>
-          <tr>
-            <td>Personalización</td>
-            <td>Alta: reglas por vendedor, sector, campaña y tipo de mercado.</td>
-            <td>Alta, pero limitada por plan, configuración y dependencia de plataforma.</td>
-          </tr>
-          <tr>
-            <td>Datos</td>
-            <td>Conexión directa con Power BI y reporting interno.</td>
-            <td>Reporting nativo, pero con datos dentro del ecosistema HubSpot.</td>
-          </tr>
-          <tr>
-            <td>Escalabilidad</td>
-            <td>Tapni, chatbot, Google Ads, Metricool, IA, Outlook y nuevos módulos.</td>
-            <td>Escalable, pero con mayor costo de suite.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="director-message compact">
-        <strong>Conclusión:</strong>
-        <p>HubSpot es una plataforma robusta. El modelo propio permite iniciar con menor costo, mayor ajuste operativo y crecimiento por módulos según las prioridades reales de Inter-Con.</p>
-      </div>
-    </section>
-  </main>
-
-  <script src="app.js"></script>
-</body>
-</html>
+        <aside class="inspector"><div id="inspectorIcon">🧠</div><h3 id="inspectorTitle">CRM Comercial Inter-Con</h3><p id="inspectorCopy">Es el núcleo operativo. Centraliza leads, empresas, contactos, interacciones, campañas, vendedores, sectores y estatus comerciales. Sin esta base, el chatbot y la IA no tendrían memoria, contexto ni trazabilidad.</p><div class="tags"><span>Dato único</span><span>Seguimiento</span><span>Medición</span><span>Escalabilidad</span></div></aside>
+      </section>
+      <section id="ai" class="view"><div class="intro"><span class="eyebrow">Dependencia estratégica</span><h2>Sin CRM, el chatbot responde. Con CRM, el chatbot prospecta.</h2><p>Esta ruta muestra por qué el CRM es la base para entrenar una IA comercial con contexto real del negocio.</p></div><div class="ai-lab"><div class="chat-panel"><div class="chat-head">💬 Chatbot comercial</div><div class="chat-bubble bot">Hola, soy el asistente de Inter-Con. ¿Buscas protección física, seguridad electrónica o una solución híbrida?</div><div class="chat-bubble user">Necesito seguridad para una planta industrial con CCTV y guardias.</div><div class="chat-bubble bot">Perfecto. ¿En qué ciudad se ubica la planta y cuántos accesos necesitas cubrir?</div><div class="chat-bubble user">Toluca, 4 accesos y monitoreo nocturno.</div></div><div class="ai-flow"><button class="flow-chip" data-step="1">1️⃣ Captura intención</button><button class="flow-chip" data-step="2">2️⃣ Clasifica mercado</button><button class="flow-chip" data-step="3">3️⃣ Consulta CRM</button><button class="flow-chip" data-step="4">4️⃣ Crea lead</button><button class="flow-chip" data-step="5">5️⃣ Asigna vendedor</button><button class="flow-chip" data-step="6">6️⃣ Recomienda acción</button></div><div class="ai-output"><h3 id="aiTitle">1️⃣ Captura intención</h3><p id="aiText">El chatbot identifica necesidad, ubicación, tipo de servicio, urgencia, tamaño del proyecto y datos de contacto.</p><div class="mini-record"><strong>Registro CRM generado:</strong><span>Empresa: Prospecto industrial</span><span>Mercado: Seguridad híbrida</span><span>Interés: Guardias + CCTV + monitoreo</span><span>Prioridad: Alta</span></div></div></div><div class="training-section"><h3>🧠 ¿Qué entrena a la IA?</h3><div class="training-grid"><div>📌 Historial de interacciones</div><div>📌 Sectores y campañas</div><div>📌 Objeciones frecuentes</div><div>📌 Motivos de avance</div><div>📌 Motivos de pérdida</div><div>📌 Cotizaciones y cierres</div><div>📌 Respuestas de correos</div><div>📌 Actividad por vendedor</div></div></div></section>
+      <section id="story" class="view"><div class="intro"><span class="eyebrow">Narrativa para dirección</span><h2>Fortalezas del proyecto al 100%.</h2><p>Usa esta sección como guion de 5 minutos para explicar por qué conviene seguir creciendo y experimentando.</p></div><div class="story-board"><div class="story-card"><div>🚫</div><h3>Problema actual</h3><p>Los leads llegan por varias fuentes, pero sin una base central se pierde trazabilidad, seguimiento, aprendizaje y medición.</p></div><div class="story-card"><div>✅</div><h3>Solución</h3><p>El CRM centraliza el dato comercial, ordena el pipeline y permite automatizar procesos sin depender de seguimiento manual.</p></div><div class="story-card"><div>🚀</div><h3>Escalabilidad</h3><p>Se pueden conectar Tapni, chatbot, Metricool, Google Ads, Outlook, Power BI e IA sin rediseñar todo el sistema.</p></div><div class="story-card"><div>🤖</div><h3>IA comercial</h3><p>La IA puede prospectar desde un chat porque tiene acceso a historial, segmentos, campañas, objeciones y rutas de seguimiento.</p></div><div class="story-card"><div>💰</div><h3>Costo-beneficio</h3><p>El modelo propio permite experimentar con menor costo inicial y crecer por módulos, antes de invertir en una suite costosa.</p></div><div class="story-card"><div>📈</div><h3>Decisión ejecutiva</h3><p>Autorizar el crecimiento del ecosistema permite convertir ventas, marketing e inteligencia comercial en un sistema medible.</p></div></div><div class="final-message"><strong>Frase clave:</strong><p>“No estamos pidiendo permiso para usar un CRM; estamos proponiendo construir una plataforma comercial inteligente que permita captar, medir, automatizar y aprender de cada oportunidad.”</p></div></section>
+    </main>
+  </div><script src="app.js"></script>
+</body></html>
